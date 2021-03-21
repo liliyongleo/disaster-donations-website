@@ -19,7 +19,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN apt-get update
-RUN apt-get install rustc
+RUN apt-get -y install rustc
 RUN pip install -r requirements.txt
 COPY . /app
 EXPOSE 5000
