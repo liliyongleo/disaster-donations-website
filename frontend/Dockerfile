@@ -27,6 +27,7 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+COPY iptables.conf /etc/iptables/
 
 EXPOSE 8080 8443
 CMD [ "npm", "start" ]
