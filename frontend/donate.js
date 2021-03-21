@@ -14,7 +14,7 @@
 #   limitations under the License.
 ##############################################################################*/
 // Backend database to GET and POST donations to
-const BACKEND = "http://localhost:5000/api/v1/transactions";
+const BACKEND = "http://172.83.4.231:5000/api/v1/transactions";
 
 // Used to select random people photos
 function getRandomInt(min, max) {
